@@ -27,6 +27,7 @@ const useStyles = makeStyles({ name: 'Header' })((theme) => ({
   imageContainer: {
     img: {
       width: '100%',
+      height: '100%',
     },
   },
 }));

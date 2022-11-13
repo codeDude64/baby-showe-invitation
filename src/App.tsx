@@ -1,12 +1,12 @@
-import Container from '@mui/material/Container';
+import { Grid } from '@mui/material';
 
 import Header from './components/Header/Header';
 
 const App = () => {
   return (
-    <Container disableGutters fixed maxWidth="xl">
+    <Grid container sx={{ marginLeft: 'auto', marginRight: 'auto' }}>
       <Header />
-    </Container>
+    </Grid>
   );
 };
 

@@ -4,7 +4,7 @@ const useStyles = makeStyles({ name: 'MyComponent' })((theme) => ({
   root: {
     textAlign: 'center',
     backgroundColor: theme.pallete.primaryColor,
-    color: 'white',
+    color: theme.pallete.secondaryColor,
   },
 }));
 

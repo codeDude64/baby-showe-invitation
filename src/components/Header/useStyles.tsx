@@ -1,11 +1,11 @@
-import makeStyles from '@mui/styles/makeStyles';
+import { makeStyles } from '../../layouts/theme';
 
-export default makeStyles(
-  () => ({
-    root: {
-      textAlign: 'center',
-      backgroundColor: 'red',
-    },
-  }),
-  { name: 'Header' },
-);
+const useStyles = makeStyles({ name: 'MyComponent' })((theme) => ({
+  root: {
+    textAlign: 'center',
+    backgroundColor: theme.pallete.primaryColor,
+    color: 'white',
+  },
+}));
+
+export default useStyles;

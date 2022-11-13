@@ -1,6 +1,6 @@
 import { makeStyles } from '../../layouts/theme';
 
-const useStyles = makeStyles({ name: 'MyComponent' })((theme) => ({
+const useStyles = makeStyles({ name: 'Header' })((theme) => ({
   root: {
     textAlign: 'center',
     backgroundColor: theme.pallete.primaryColor,

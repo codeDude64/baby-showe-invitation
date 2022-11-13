@@ -6,7 +6,7 @@ const Header = () => {
   const { classes } = useStyles();
 
   return (
-    <Grid container direction="row" className={classes.root}>
+    <Grid container direction="column" className={classes.root}>
       <Grid item className={classes.wrapper}>
         <Grid item className={classes.title}>
           <h1> Baby Shower de Xochitl </h1>

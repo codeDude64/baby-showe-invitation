@@ -6,7 +6,7 @@ import Menu from './components/Menu/Menu';
 const App = () => {
   return (
     <Grid container sx={{ marginLeft: 'auto', marginRight: 'auto' }}>
-      <Menu isMobile />
+      <Menu />
       <Header />
     </Grid>
   );

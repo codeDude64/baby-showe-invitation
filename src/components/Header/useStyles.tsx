@@ -24,6 +24,11 @@ const useStyles = makeStyles({ name: 'Header' })((theme) => ({
     borderRadius: 50,
     marginBottom: '3em',
   },
+  imageContainer: {
+    img: {
+      width: '100%',
+    },
+  },
 }));
 
 export default useStyles;

@@ -1,5 +1,6 @@
 import { Button, Grid } from '@mui/material';
 
+import photo from '../../assets/photo.jpg';
 import useStyles from './useStyles';
 
 const Header = () => {
@@ -18,6 +19,9 @@ const Header = () => {
             Confirma tu asistencia{' '}
           </Button>
         </Grid>
+      </Grid>
+      <Grid item className={classes.imageContainer}>
+        <img src={photo} alt="babyshower" />
       </Grid>
     </Grid>
   );

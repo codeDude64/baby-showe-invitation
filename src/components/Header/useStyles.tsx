@@ -1,11 +1,11 @@
-import makeStyles from "@mui/styles/makeStyles";
+import makeStyles from '@mui/styles/makeStyles';
 
 export default makeStyles(
   () => ({
     root: {
-      textAlign: "center",
-      backgroundColor: "red"
-    }
+      textAlign: 'center',
+      backgroundColor: 'red',
+    },
   }),
-  { name: "CalendarDetailModal" },
+  { name: 'Header' },
 );

@@ -1,5 +1,6 @@
 import { Card, CardContent, Typography } from '@mui/material';
 
+import handPhoto from '../../../assets/manita.jpg';
 import useStyles from './useStyles';
 
 const Invitation = () => {
@@ -7,6 +8,7 @@ const Invitation = () => {
   return (
     <Card sx={{ minWidth: 275 }}>
       <CardContent className={classes.container}>
+        <img src={handPhoto} alt="manita" width={400} />
         <Typography pb={4} pt={2} className={classes.title}>
           Tendremos un hijo!!!
         </Typography>

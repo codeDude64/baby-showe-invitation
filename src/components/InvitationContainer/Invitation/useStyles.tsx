@@ -4,6 +4,7 @@ const useStyles = makeStyles({ name: 'Invitation' })((theme) => ({
   container: {
     textAlign: 'center',
     color: theme.pallete.primaryColor,
+    borderRadius: 20,
   },
   title: {
     fontFamily: 'Fredoka One',

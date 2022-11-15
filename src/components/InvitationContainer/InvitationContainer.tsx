@@ -1,5 +1,6 @@
 import { Grid } from '@mui/material';
 
+import Address from './Address/Address';
 import Galery from './Galery/Galery';
 import Invitation from './Invitation/Invitation';
 import useStyles from './useStyles';
@@ -14,6 +15,9 @@ const InvitationContainer = () => {
       </Grid>
       <Grid item mt={5} mb={5}>
         <Galery />
+      </Grid>
+      <Grid item mt={5} mb={5}>
+        <Address />
       </Grid>
     </Grid>
   );

@@ -20,7 +20,13 @@ const Header = () => {
           </Button>
         </Grid>
       </Grid>
-      <Grid item className={classes.imageContainer}>
+      <Grid
+        item
+        className={classes.imageContainer}
+        display="flex"
+        justifyContent="center"
+        pb={5}
+      >
         <img src={photo} alt="La mujer mas hermosa del mundo." />
       </Grid>
     </Grid>

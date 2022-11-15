@@ -37,7 +37,7 @@ const Mobile = () => {
         </MenuItem>
         <Divider />
         <MenuItem>
-          <ListItemText>Mapa</ListItemText>
+          <ListItemText>Dirección</ListItemText>
         </MenuItem>
       </Paper>
     );

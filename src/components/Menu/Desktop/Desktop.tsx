@@ -13,7 +13,7 @@ const Desktop = () => {
         <Button> Galeria </Button>
       </Grid>
       <Grid>
-        <Button> Mapa </Button>
+        <Button> Dirección </Button>
       </Grid>
     </Grid>
   );

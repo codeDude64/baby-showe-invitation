@@ -1,5 +1,4 @@
 import { Button, Grid } from '@mui/material';
-import Divider from '@mui/material/Divider';
 import ListItemText from '@mui/material/ListItemText';
 import MenuItem from '@mui/material/MenuItem';
 import Paper from '@mui/material/Paper';
@@ -35,7 +34,6 @@ const Mobile = () => {
         <MenuItem>
           <ListItemText>Galeria</ListItemText>
         </MenuItem>
-        <Divider />
         <MenuItem>
           <ListItemText>Dirección</ListItemText>
         </MenuItem>

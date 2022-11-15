@@ -1,6 +1,6 @@
 import { makeStyles } from '../../../layouts/theme';
 
-const useStyles = makeStyles({ name: 'Invitation' })((theme) => ({
+const useStyles = makeStyles({ name: 'Galery' })((theme) => ({
   container: {
     textAlign: 'center',
     color: theme.pallete.primaryColor,

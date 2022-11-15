@@ -1,6 +1,6 @@
 import { makeStyles } from '../../../../layouts/theme';
 
-const useStyles = makeStyles({ name: 'ImageModal' })((theme) => ({
+const useStyles = makeStyles({ name: 'ImageModal' })(() => ({
   modal: {
     display: 'flex',
     alignItems: 'center',

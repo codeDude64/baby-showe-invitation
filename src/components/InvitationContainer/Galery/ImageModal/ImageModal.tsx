@@ -1,27 +1,26 @@
-import { Box, Fade, Modal, Typography } from '@mui/material';
+import { Fade, Modal } from '@mui/material';
+import { FC } from 'react';
 
-const ImageModal = ({ src }) => {
+import useStyles from './useStyles';
+
+interface Props {
+  src: string;
+  title: string;
+  show: boolean;
+  handleClose: () => void;
+}
+
+const ImageModal: FC<Props> = ({ src, title, show, handleClose }) => {
+  const { classes } = useStyles();
   return (
     <Modal
-      aria-labelledby="spring-modal-title"
-      aria-describedby="spring-modal-description"
-      open={open}
+      className={classes.modal}
+      open={show}
       onClose={handleClose}
       closeAfterTransition
-      BackdropComponent={Backdrop}
-      BackdropProps={{
-        timeout: 500,
-      }}
     >
-      <Fade in={open}>
-        <Box sx={style}>
-          <Typography id="spring-modal-title" variant="h6" component="h2">
-            Text in a modal
-          </Typography>
-          <Typography id="spring-modal-description" sx={{ mt: 2 }}>
-            Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-          </Typography>
-        </Box>
+      <Fade in={show}>
+        <img src={src} alt={title} className={classes.image} />
       </Fade>
     </Modal>
   );

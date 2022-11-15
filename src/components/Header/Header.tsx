@@ -15,8 +15,7 @@ const Header = () => {
         </Grid>
         <Grid item className={classes.title}>
           <Button variant="contained" className={classes.button}>
-            {' '}
-            Confirma tu asistencia{' '}
+            Confirma tu asistencia
           </Button>
         </Grid>
       </Grid>

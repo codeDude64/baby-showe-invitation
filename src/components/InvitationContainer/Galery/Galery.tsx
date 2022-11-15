@@ -1,4 +1,7 @@
+/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
 import { Card, CardContent, ImageList, ImageListItem, Typography } from '@mui/material';
+import { useState } from 'react';
 
 import galery1 from '../../../assets/galery1.jpg';
 import galery2 from '../../../assets/galery2.jpg';
@@ -9,10 +12,26 @@ import galery6 from '../../../assets/galery6.jpg';
 import galery7 from '../../../assets/galery7.jpg';
 import galery8 from '../../../assets/galery8.jpg';
 import handPhoto from '../../../assets/manita.jpg';
+import ImageModal from './ImageModal/ImageModal';
 import useStyles from './useStyles';
 
 const Galery = () => {
   const { classes } = useStyles();
+  const [openModal, setOpenModal] = useState(false);
+  const [currentImageSrc, setCurrentImageSrc] = useState('');
+  const [currentImageTitle, setCurrentImageTitle] = useState('');
+
+  const handleImageItemClick = (src: string, title: string) => {
+    setOpenModal(true);
+    setCurrentImageSrc(src);
+    setCurrentImageTitle(title);
+  };
+
+  const handlerClose = () => {
+    setOpenModal(false);
+    setCurrentImageSrc('');
+    setCurrentImageTitle('');
+  };
 
   const images = [
     { img: galery1, title: 'galery1', cols: 1, rows: 1 },
@@ -40,10 +59,17 @@ const Galery = () => {
                 srcSet={`${image.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
                 alt={image.title}
                 loading="lazy"
+                onClick={() => handleImageItemClick(image.img, image.title)}
               />
             </ImageListItem>
           ))}
         </ImageList>
+        <ImageModal
+          src={currentImageSrc}
+          title={currentImageTitle}
+          show={openModal}
+          handleClose={handlerClose}
+        />
       </CardContent>
     </Card>
   );

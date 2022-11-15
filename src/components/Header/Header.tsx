@@ -10,8 +10,8 @@ const Header = () => {
     <Grid container direction="column" className={classes.root}>
       <Grid item className={classes.wrapper}>
         <Grid item className={classes.title}>
-          <h1> Baby Shower de Xochitl </h1>
-          <p> Bienvenido al mundo Alan. </p>
+          <h1> Baby Shower de Alan </h1>
+          <p> Bienvenido al mundo hijo querido.</p>
         </Grid>
         <Grid item className={classes.title}>
           <Button variant="contained" className={classes.button}>
@@ -21,7 +21,7 @@ const Header = () => {
         </Grid>
       </Grid>
       <Grid item className={classes.imageContainer}>
-        <img src={photo} alt="babyshower" />
+        <img src={photo} alt="La mujer mas hermosa del mundo." />
       </Grid>
     </Grid>
   );

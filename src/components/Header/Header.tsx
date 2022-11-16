@@ -22,7 +22,11 @@ const Header = () => {
           <p> Bienvenido al mundo, hijo querido.</p>
         </Grid>
         <Grid item className={classes.title}>
-          <Button variant="contained" className={classes.button}>
+          <Button
+            variant="contained"
+            className={classes.button}
+            onClick={() => window.open('https://forms.gle/Wz6WZ6gZTYhjPenp7', '_blank')}
+          >
             Confirma tu asistencia
           </Button>
         </Grid>

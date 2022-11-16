@@ -12,6 +12,7 @@ import galery6 from '../../../assets/galery6.jpg';
 import galery7 from '../../../assets/galery7.jpg';
 import galery8 from '../../../assets/galery8.jpg';
 import handPhoto from '../../../assets/manita.jpg';
+import useScreen from '../../../hooks/useScreen';
 import ImageModal from './ImageModal/ImageModal';
 import useStyles from './useStyles';
 
@@ -20,6 +21,7 @@ const Galery = () => {
   const [openModal, setOpenModal] = useState(false);
   const [currentImageSrc, setCurrentImageSrc] = useState('');
   const [currentImageTitle, setCurrentImageTitle] = useState('');
+  const [isMobile] = useScreen();
 
   const handleImageItemClick = (src: string, title: string) => {
     setOpenModal(true);
@@ -51,7 +53,11 @@ const Galery = () => {
         <Typography pb={4} pt={2} className={classes.title}>
           Galería
         </Typography>
-        <ImageList sx={{ width: '100%', height: 500 }} cols={3} rowHeight={164}>
+        <ImageList
+          sx={{ width: '100%', height: '100%' }}
+          cols={3}
+          rowHeight={isMobile ? 164 : 264}
+        >
           {images.map((image) => (
             <ImageListItem key={image.img} cols={image.cols || 1} rows={image.rows || 1}>
               <img

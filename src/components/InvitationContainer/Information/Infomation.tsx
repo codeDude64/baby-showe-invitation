@@ -2,7 +2,7 @@ import { Card, CardContent, CardMedia, Link, Typography } from '@mui/material';
 
 import useStyles from './useStyles';
 
-const Address = () => {
+const Information = () => {
   const { classes } = useStyles();
   return (
     <Card className={classes.container}>
@@ -21,4 +21,4 @@ const Address = () => {
   );
 };
 
-export default Address;
+export default Information;

@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "clean": "rm -rfv build"
+    "clean": "rm -rfv dist"
   },
   "dependencies": {
     "@emotion/react": "^11.10.5",

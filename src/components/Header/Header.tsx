@@ -19,7 +19,7 @@ const Header = () => {
       <Grid item ml={1} alignSelf={isMobile ? 'normal' : 'center'} mr={isMobile ? 0 : 20}>
         <Grid item className={classes.title}>
           <h1> Baby Shower de Alan </h1>
-          <p> Bienvenido al mundo hijo querido.</p>
+          <p> Bienvenido al mundo, hijo querido.</p>
         </Grid>
         <Grid item className={classes.title}>
           <Button variant="contained" className={classes.button}>

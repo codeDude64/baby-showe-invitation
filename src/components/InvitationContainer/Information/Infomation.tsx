@@ -10,15 +10,14 @@ const Information = () => {
     <Card className={classes.container}>
       <CardContent>
         <Typography pb={4} pt={2} className={classes.title}>
-          Acerca de
+          Detalles
         </Typography>
         <Typography className={classes.desc}>
-          Nos complace extenderte la invitacion para que nos acompanies el dia{' '}
+          Nos complace extenderte la invitación para que nos acompañes el día
         </Typography>
         <Typography className={classes.desc}>
           <CalendarMonthIcon />
-          Domingo 27 de Noviembre a partir de las 2:00pm. En el link adjunto encontraras
-          los detalles con la dirección.
+          Domingo 27 de Noviembre a partir de las 02:00 pm.{' '}
         </Typography>
         <Typography className={classes.desc}>
           <MapIcon />

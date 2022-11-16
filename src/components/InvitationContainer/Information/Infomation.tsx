@@ -21,7 +21,7 @@ const Information = () => {
         </Typography>
         <Typography className={classes.desc}>
           <MapIcon />
-          San Isidro 18, San Ramón, Zamora Michoacán.
+          San Isidro 18, San Ramón, Zamora, Michoacán.
         </Typography>
         <Link className={classes.desc} href="https://maps.app.goo.gl/qX8P6Jgo8PDztHeP6">
           Dirección en Google Maps.

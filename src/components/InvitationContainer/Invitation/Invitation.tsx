@@ -8,7 +8,7 @@ const Invitation = () => {
   return (
     <Card className={classes.container}>
       <CardContent>
-        <CardMedia component="img" width={400} image={handPhoto} alt="manita" />
+        <CardMedia component="img" image={handPhoto} alt="manita" />
         <Typography pb={4} pt={2} className={classes.title}>
           Tendremos un bebé!!!
         </Typography>

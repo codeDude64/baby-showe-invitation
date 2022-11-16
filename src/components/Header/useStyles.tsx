@@ -5,9 +5,6 @@ const useStyles = makeStyles({ name: 'Header' })((theme) => ({
     width: '100%',
     backgroundColor: theme.pallete.primaryColor,
   },
-  wrapper: {
-    marginLeft: 10,
-  },
   title: {
     color: theme.pallete.secondaryColor,
     marginBottom: '3em',
@@ -26,6 +23,8 @@ const useStyles = makeStyles({ name: 'Header' })((theme) => ({
   },
   imageContainer: {
     img: {
+      minWidth: 304,
+      maxWidth: 500,
       width: '95%',
       alignSelf: 'center',
     },

@@ -14,7 +14,7 @@ const Desktop: FC<Props> = ({ menu }) => {
   return (
     <Grid container className={classes.root} justifyContent="flex-end">
       {menu.map((item: MenuItem) => (
-        <Grid item key={item.name}>
+        <Grid item key={item.name} mr={5}>
           <Link key={item.name} activeClass="active" to={item.address} spy smooth>
             {item.name}
           </Link>

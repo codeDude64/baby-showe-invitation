@@ -16,8 +16,8 @@ const Menu: FC<Props> = ({ isMobile = false }) => {
     { name: 'Detalles', address: MenuItemAddress.information },
   ];
   const chooseComponent = () => {
-    let component = <Mobile menu={menu} />;
-    if (!isMobile) component = <Desktop menu={menu} />;
+    let component = <Desktop menu={menu} />;
+    if (isMobile) component = <Mobile menu={menu} />;
 
     return component;
   };

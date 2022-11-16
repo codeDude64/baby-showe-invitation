@@ -13,7 +13,7 @@ const theme = () => ({
       md: 960,
       lg: 1280,
       xl: 1920,
-      mobile: 780,
+      mobile: 540,
       tablet: 1280,
     },
   },

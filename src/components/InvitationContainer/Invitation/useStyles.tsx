@@ -5,7 +5,6 @@ const useStyles = makeStyles({ name: 'Invitation' })((theme) => ({
     textAlign: 'center',
     color: theme.pallete.primaryColor,
     borderRadius: 20,
-    minWidth: 275,
   },
   title: {
     fontFamily: 'Fredoka One',

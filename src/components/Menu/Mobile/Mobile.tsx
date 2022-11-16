@@ -1,12 +1,18 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import { Button, Grid } from '@mui/material';
-import ListItemText from '@mui/material/ListItemText';
 import MenuItem from '@mui/material/MenuItem';
 import Paper from '@mui/material/Paper';
-import { useEffect, useRef, useState } from 'react';
+import { FC, useEffect, useRef, useState } from 'react';
+import { Link } from 'react-scroll';
 
+import { MenuItem as LocalMenuItem } from '../types';
 import useStyles from './useStyles';
 
-const Mobile = () => {
+interface Props {
+  menu: Array<LocalMenuItem>;
+}
+
+const Mobile: FC<Props> = ({ menu }) => {
   const { classes } = useStyles();
   const [showMenu, setShowMenu] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
@@ -28,15 +34,18 @@ const Mobile = () => {
     if (!showMenu) return;
     return (
       <Paper sx={{ width: 320 }}>
-        <MenuItem>
-          <ListItemText>Invitacion</ListItemText>
-        </MenuItem>
-        <MenuItem>
-          <ListItemText>Galeria</ListItemText>
-        </MenuItem>
-        <MenuItem>
-          <ListItemText>Dirección</ListItemText>
-        </MenuItem>
+        {menu.map((item: LocalMenuItem) => (
+          <Link
+            key={item.name}
+            activeClass="active"
+            to={item.address}
+            spy
+            smooth
+            onClick={() => setShowMenu(false)}
+          >
+            <MenuItem>{item.name}</MenuItem>
+          </Link>
+        ))}
       </Paper>
     );
   };

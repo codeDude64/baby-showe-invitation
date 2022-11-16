@@ -1,5 +1,7 @@
 import { Grid } from '@mui/material';
+import { Element } from 'react-scroll';
 
+import { MenuItemAddress } from '../Menu/enums';
 import Galery from './Galery/Galery';
 import Information from './Information/Infomation';
 import Invitation from './Invitation/Invitation';
@@ -11,13 +13,19 @@ const InvitationContainer = () => {
   return (
     <Grid container className={classes.root} justifyContent="center" pt={5}>
       <Grid item mt={5} mb={5}>
-        <Invitation />
+        <Element name={MenuItemAddress.invitation}>
+          <Invitation />
+        </Element>
       </Grid>
       <Grid item mt={5} mb={5}>
-        <Galery />
+        <Element name={MenuItemAddress.galery}>
+          <Galery />
+        </Element>
       </Grid>
       <Grid item mt={5} mb={5}>
-        <Information />
+        <Element name={MenuItemAddress.information}>
+          <Information />
+        </Element>
       </Grid>
     </Grid>
   );

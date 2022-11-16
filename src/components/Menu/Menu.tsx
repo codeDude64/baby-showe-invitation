@@ -1,16 +1,23 @@
 import { FC } from 'react';
 
 import Desktop from './Desktop/Desktop';
+import { MenuItemAddress } from './enums';
 import Mobile from './Mobile/Mobile';
+import { MenuItem } from './types';
 
 interface Props {
   isMobile?: boolean;
 }
 
 const Menu: FC<Props> = ({ isMobile = false }) => {
+  const menu: Array<MenuItem> = [
+    { name: 'Invitacion', address: MenuItemAddress.invitation },
+    { name: 'Galeria', address: MenuItemAddress.galery },
+    { name: 'Detalles', address: MenuItemAddress.information },
+  ];
   const chooseComponent = () => {
-    let component = <Mobile />;
-    if (!isMobile) component = <Desktop />;
+    let component = <Mobile menu={menu} />;
+    if (!isMobile) component = <Desktop menu={menu} />;
 
     return component;
   };

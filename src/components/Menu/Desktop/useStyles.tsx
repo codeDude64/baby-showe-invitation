@@ -5,7 +5,7 @@ const useStyles = makeStyles({ name: 'MenuDesktop' })((theme) => ({
     paddingTop: 15,
     width: '100%',
     backgroundColor: theme.pallete.primaryColor,
-    button: {
+    a: {
       color: theme.pallete.secondaryColor,
       fontFamily: 'Fredoka One',
     },

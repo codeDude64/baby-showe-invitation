@@ -11,8 +11,8 @@ interface Props {
 
 const Menu: FC<Props> = ({ isMobile = false }) => {
   const menu: Array<MenuItem> = [
-    { name: 'Invitacion', address: MenuItemAddress.invitation },
-    { name: 'Galeria', address: MenuItemAddress.galery },
+    { name: 'Invitación', address: MenuItemAddress.invitation },
+    { name: 'Galería', address: MenuItemAddress.galery },
     { name: 'Detalles', address: MenuItemAddress.information },
   ];
   const chooseComponent = () => {

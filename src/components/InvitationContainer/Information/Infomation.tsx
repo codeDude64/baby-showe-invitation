@@ -27,7 +27,7 @@ const Information = () => {
           Dirección en Google Maps.
         </Link>
         <Typography mt={5}>
-          El evento es mixto por lo tanto estan invitados mujeres y hombres.
+          El evento es mixto por lo tanto están invitados mujeres y hombres.
         </Typography>
       </CardContent>
     </Card>

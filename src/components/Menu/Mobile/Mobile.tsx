@@ -53,7 +53,7 @@ const Mobile: FC<Props> = ({ menu }) => {
   return (
     <Grid container className={classes.root} justifyContent="flex-end">
       <Grid className={classes.buttonContainer}>
-        <Button onClick={handlerMenuBtnClick}>Menu</Button>
+        <Button onClick={handlerMenuBtnClick}>Menú</Button>
       </Grid>
       <Grid className={classes.menuContainer} ref={menuRef}>
         {renderMenu()}

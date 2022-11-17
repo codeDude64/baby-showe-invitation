@@ -9,7 +9,7 @@ const Footer = () => {
     <Grid container className={classes.root}>
       Hecho con{'  '}
       <FavoriteIcon className={classes.love} />
-      para Xochitl y Alan.
+      para Xóchitl y Alan.
     </Grid>
   );
 };

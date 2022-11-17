@@ -8,7 +8,6 @@ const useScreen = () => {
   const { theme } = useStyles();
 
   const { mobile, tablet } = theme.breakpoints.values;
-  console.log({ mobile, tablet });
 
   const isMobile = useMediaQuery(`(max-width:${mobile - 1}px)`);
   const isTablet = useMediaQuery(
